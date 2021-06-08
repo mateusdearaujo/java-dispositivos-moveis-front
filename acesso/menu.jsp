@@ -29,7 +29,7 @@
 <!DOCTYPE html>
 <html>
     <%@include file="../../inc/formatacao.inc" %>
-    <title>Menu</title>
+    <title>Painel Administrativo</title>
         <style>
         html, 
         body {
@@ -70,7 +70,7 @@
             </div>
             
         <a class="waves-effect waves-light btn" href="../eletronico/index.jsp">Eletronicos</a>
-        <a class="waves-effect waves-light btn" href="../eletronico/criaEletronico.jsp">Clientes</a>
+        <a class="waves-effect waves-light btn" href="../cliente/index.jsp">Clientes</a>
         <a class="waves-effect waves-light btn" href="../eletronico/criaEletronico.jsp">Pedidos</a>
         
         <% } else { %>
