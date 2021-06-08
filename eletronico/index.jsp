@@ -21,7 +21,7 @@
     <%@include file="../../inc/formatacao.inc" %>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-        <title>JSP Page</title>
+        <title>Eletronicos</title>
         <style>
         html, 
         body {
@@ -93,7 +93,7 @@
       </table>
     </div>
             
-    <script>
+<script>
 function myFunction() {
   let input, filter, table, tr, td, i, txtValue;
   input = document.getElementById("filterIndex");

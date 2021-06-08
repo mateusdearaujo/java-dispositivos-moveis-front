@@ -11,7 +11,7 @@
 <!DOCTYPE html>
 <html>
     <%@include file="../../inc/formatacao.inc" %>
-    <title>Edicao</title>
+    <title>Eletronicos</title>
         <style>
         html, 
         body {

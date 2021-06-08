@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
     <%@include file="../../inc/formatacao.inc" %>
-    <title>Menu</title>
+    <title>Adicionar Eletronico</title>
         <style>
         html, 
         body {
