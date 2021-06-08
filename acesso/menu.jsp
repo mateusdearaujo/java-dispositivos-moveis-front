@@ -50,7 +50,7 @@
     <body>
     <div class="container" style="background:white"/>   
         <% if(uSaida != null) { %>
-            <h2 style="text-align: center">MENU</h1>
+            <h2 style="text-align: center">Painel Administrativo</h1>
             <div class="row" style="padding:20px">
               <div class="input-field col s4">
                 <i class="material-icons prefix">account_circle</i>
@@ -68,80 +68,14 @@
                 <label for="icon_fingerprint">Perfil</label>
               </div>
             </div>
-
-        <h3>Eletronicos</h3>
-        
-        <label for="filterIndex">Filtrar</label>
-        <input id="filterIndex" onkeyup="myFunction()" type="text" class="validate">
-        
-        <table class="highlight" style="margin-bottom: 20px" id="gridIndex">
-        <thead>
-          <tr>
-              <th>Id</th>
-              <th>Nome</th>
-              <th>Descricao</th>
-              <th>Valor</th>
-              <th>Lancamento</th>
-              <th>Quantidade</th>
-              <th>Ativo</th>
-              <th>Marca</th>
-              <th>Modelo</th>
-              <th>Acoes</th>
-          </tr>
-        </thead>
-
-        <tbody>
-   
-                    <%
-        for(Eletronico eletronico : data)
-        {
-            out.println("<tr>");
             
-            out.println("<td>" + eletronico.getId() + "</td>");   
-            out.println("<td>" + eletronico.getNome() + "</td>");         
-            out.println("<td>" + eletronico.getDescricao() + "</td>");         
-            out.println("<td>" + eletronico.getValor() + "</td>");
-            out.println("<td>" + eletronico.getAno_de_lancamento() + "</td>");
-            out.println("<td>" + eletronico.getQuantidade() + "</td>");
-            out.println("<td>" + eletronico.getAtivo() + "</td>");
-            out.println("<td>" + eletronico.getMarca() + "</td>");
-            out.println("<td>" + eletronico.getModelo() + "</td>");
-            out.println("<td><a style='color: #26a69a' href='../eletronico/editaEletronico.jsp?ID="+ eletronico.getId() + "'><i class='tiny material-icons'>edit</i></a><a style='color: #26a69a' href='../eletronico/excluiEletronico.jsp?ID="+ eletronico.getId() + "'><i class='tiny material-icons' style='margin-left:15px'>delete</a></i></td>");
-                    
-            out.println("</tr>");
-        }
-        %>
-            
-        </tbody>
-      </table>
-       
-    <a class="waves-effect waves-light btn" href="../eletronico/criaEletronico.jsp">Novo</a>
+        <a class="waves-effect waves-light btn" href="../eletronico/index.jsp">Eletronicos</a>
+        <a class="waves-effect waves-light btn" href="../eletronico/criaEletronico.jsp">Clientes</a>
+        <a class="waves-effect waves-light btn" href="../eletronico/criaEletronico.jsp">Pedidos</a>
         
         <% } else { %>
             Usuário Inválido
         <% } %>
     </div>
-    
-    <script>
-function myFunction() {
-  let input, filter, table, tr, td, i, txtValue;
-  input = document.getElementById("filterIndex");
-  filter = input.value.toUpperCase();
-  table = document.getElementById("gridIndex");
-  tr = table.getElementsByTagName("tr");
-
-  for (i = 0; i < tr.length; i++) {
-    td = tr[i].getElementsByTagName("td")[1];
-    if (td) {
-      txtValue = td.textContent || td.innerText;
-      if (txtValue.toUpperCase().indexOf(filter) > -1) {
-        tr[i].style.display = "";
-      } else {
-        tr[i].style.display = "none";
-      }
-    }
-  }
-}
-</script>
     </body>
 </html>
