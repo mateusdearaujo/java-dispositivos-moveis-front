@@ -71,7 +71,7 @@
             
         <a class="waves-effect waves-light btn" href="../eletronico/index.jsp">Eletronicos</a>
         <a class="waves-effect waves-light btn" href="../cliente/index.jsp">Clientes</a>
-        <a class="waves-effect waves-light btn" href="../eletronico/criaEletronico.jsp">Pedidos</a>
+        <a class="waves-effect waves-light btn" href="../pedido/index.jsp">Pedidos</a>
         
         <% } else { %>
             Usuário Inválido
